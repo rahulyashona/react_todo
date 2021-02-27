@@ -1,13 +1,84 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* base styles */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Quicksand";
+  color: #333;
+}
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.navbar h1 {
+  background-color: #dd9639;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-radius: 3px;
+  color: #f2f2f2;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  color: #3571f1;
+  padding: 6px;
+}
+.navbar a:hover {
+  color: #dd9639;
+}
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Blog list styles */
+.todo-list h2{
+  color: #574021;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* font-family: "Lucida Handwriting", "Brush Script MT", cursive; */
+}
+
+.todo-preview{
+  padding: 10px 16px;
+  margin: 20 px 0 px;
+  border-bottom: 0.5px solid #aadfdc;
+  /* font-family: "Lucida Handwriting", "Brush Script MT", cursive; */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.todo-preview:hover{
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+}
+.todo-preview h2{
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #b46701;
+  margin-bottom: 8px;
+}
+.todo-preview p{
+  /* font-family: "Lucida Handwriting", "Brush Script MT", cursive; */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.deleteButton{
+  background-color: white; 
+  color: black; 
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border: 2px solid #f44336;
+}
+
+.deleteButton:hover {
+  background-color: #f44336;
+  color: white;
 }
