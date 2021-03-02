@@ -71,6 +71,7 @@
 
 }
 
+
 .deleteButton{
   background-color: white; 
   color: black; 
@@ -79,6 +80,19 @@
 }
 
 .deleteButton:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+.detailButton{
+  background-color: white; 
+  color: black; 
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-left: auto;
+  border: 2px solid #f44336;
+}
+
+.detailButton:hover {
   background-color: #f44336;
   color: white;
 }
@@ -99,7 +113,6 @@
   margin-left: -100px;
 }
 
-/* Safari */
 @-webkit-keyframes spin {
   0% { -webkit-transform: rotate(0deg); }
   100% { -webkit-transform: rotate(360deg); }
@@ -116,4 +129,9 @@
   margin:10px 22px;
   font-size:1em;
   vertical-align:middle;
+}
+
+.detail{
+  color: #D8000C;
+
 }
