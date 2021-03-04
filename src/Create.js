@@ -4,7 +4,7 @@ const Create = () => {
     const [task, setTask] = useState('');
     const [body, setBody] = useState('');
     const [date, setDate] = useState('');
-    const [creater, setCreater] = useState('');
+    const [author, setAuthor] = useState('');
 
     return ( 
         <div className="add-blog">
@@ -35,8 +35,8 @@ const Create = () => {
                 <input 
                     type="text"
                     required
-                    value={creater}
-                    onChange = {(e)=> setCreater(e.target.value)}
+                    value={author}
+                    onChange = {(e)=> setAuthor(e.target.value)}
                 />
                 <button>Add Task</button>
             </form>
