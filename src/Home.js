@@ -3,7 +3,7 @@ import useFetch from './useFetch';
 // e is an event object
 const Home = () => {
     
-    const {data : todos, loading, error} = useFetch('http://localhost:8000/blogs');
+    const {data : todos, loading, error} = useFetch(' http://localhost:8000/todos');
     // const handleDelete = (id) => {
     //     const newTodos = todos.filter(blog => blog.id !== id);
     //     setTodos(newTodos);

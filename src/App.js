@@ -3,7 +3,7 @@ import Navbar from './navbar';
 import Home from './Home';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Create from './Create';
-import Detail from './Detail';
+import TaskDetail from './TaskDetail';
 
 
 function App() {
@@ -19,8 +19,8 @@ function App() {
             <Route path="/create"> 
               <Create />
             </Route>
-            <Route path="/detail"> 
-              <Detail />
+            <Route path="/task/:id"> 
+              <TaskDetail />
             </Route>
           </Switch>
         </div>
