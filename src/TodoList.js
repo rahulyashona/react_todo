@@ -15,6 +15,7 @@ import { Link } from "react-router-dom";
                 <div className="todo-preview" key={todo.id}>
                     <h2>{ todo.task }</h2>
                     <Link to={`/task/${ todo.id }`}><button className = "detailButton">View Task</button></Link>
+                    <Link to={`/edit/${ todo.id }`}><button className = "detailButton">Edit Task</button></Link>
                     {/* <h3>{ todo.task }</h3> */}
                     <h5>
                         <p>Dew Date: {todo.dewDate} </p>

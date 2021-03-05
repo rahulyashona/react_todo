@@ -4,6 +4,8 @@ import Home from './Home';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Create from './Create';
 import TaskDetail from './TaskDetail';
+import NotFound from './NotFound';
+import EditTask from './EditTask';
 
 
 function App() {
@@ -21,6 +23,12 @@ function App() {
             </Route>
             <Route path="/task/:id"> 
               <TaskDetail />
+            </Route>
+            <Route path='/edit/:id'>
+              <EditTask />
+            </Route>
+            <Route path="*"> 
+              <NotFound />
             </Route>
           </Switch>
         </div>

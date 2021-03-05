@@ -148,6 +148,13 @@
   vertical-align:middle;
 }
 
+.alert-deleted{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 10px;
+  background-color: #D8000C;
+  color: rgb(255, 255, 255);
+}
+
 .task-head h2{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #0e5575;
@@ -197,7 +204,7 @@
   border: 2px solid #0e5575;
   border-radius: 4px;
   float: right;
-  padding: 14px 40px;
+  padding: 10px 30px;
 }
 
 .complete-button:hover {
@@ -209,6 +216,13 @@
   text-align: center;
   margin: 0 auto;
   max-width: 400px;
+}
+
+.alert-added {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 10px;
+  background-color: #70cf58;
+  color: rgb(255, 255, 255);
 }
 
 .add-blog h2 {
@@ -280,3 +294,4 @@
   /* background-color: #f44336; */
   color: #e5ff00;
 }
+
