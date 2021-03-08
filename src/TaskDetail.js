@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useHistory, useParams } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import useFetch from './useFetch';
 
 const TaskDetail = () => {
@@ -8,27 +9,6 @@ const TaskDetail = () => {
 
     const history = useHistory();
     const [isDeleted, setIsDeleted] = useState(false);
-
-
-
-    // const options =() => {
-    //     confirmAlert({
-    //         title: 'Confirm to submit',
-    //         message: 'Are you sure to do this.',
-    //         buttons: [
-    //           {
-    //             label: 'Yes',
-    //             onClick: () => {handleClick()}
-    //           },
-    //           {
-    //             label: 'No',
-    //             onClick: () => alert('Click No')
-    //           }
-    //         ]
-    //       });
-    //   };
-
-    //  
 
     const handleClick = ()=>{
         console.log("Button pressed");
@@ -44,6 +24,7 @@ const TaskDetail = () => {
             }, 2000);
         })
     }
+    
     return ( 
         <div className="task-detail">
             {loading && <div className='loader'></div>}
@@ -56,7 +37,10 @@ const TaskDetail = () => {
                 </div>
                     
                     <div className='task-body'>{ todo.body }</div>
-                    <button className = "complete-button" onClick={handleClick}>Mark as Done</button>
+                    {/* <button className = "complete-button" onClick={handleDone}>Mark as Done</button> */}
+                    <button className = "complete-button" onClick={handleClick}>Delete Task</button>
+                    {/* <Link to={`/edit/${ id }`}><button className = "detailButton">Edit Task</button></Link> */}
+
                 </article>    
                 )}
         </div>

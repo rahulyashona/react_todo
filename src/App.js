@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Create from './Create';
 import TaskDetail from './TaskDetail';
 import NotFound from './NotFound';
-import EditTask from './EditTask';
+// import EditTask from './EditTask';
 
 
 function App() {
@@ -24,9 +24,9 @@ function App() {
             <Route path="/task/:id"> 
               <TaskDetail />
             </Route>
-            <Route path='/edit/:id'>
+            {/* <Route path='/edit/:id'>
               <EditTask />
-            </Route>
+            </Route> */}
             <Route path="*"> 
               <NotFound />
             </Route>

@@ -6,13 +6,14 @@ const Create = () => {
     const [body, setBody] = useState('');
     const [dewDate, setDewDate] = useState('');
     const [author, setAuthor] = useState('');
+    const [isComplete, setIsComplete] = useState(false);
 
     const history = useHistory();
 
     const [isPending, setIsPending] = useState(false);
     const [isAdded, setIsAdded] = useState(false);
 
-    const todo = {task, body, dewDate, author};
+    const todo = {task, body, dewDate, author, isComplete};
 
     const handleSubmit =(e) =>{
         e.preventDefault();

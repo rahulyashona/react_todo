@@ -9,14 +9,10 @@ const Home = () => {
     //     setTodos(newTodos);
     // }
 
-    const handleDetail =(id) => {
-        console.log('Detail page link :' );
-        console.log(id);
-    }
 
     return ( 
         <div className="Homepage">
-            {todos && <TodoList todos= { todos } tasks="To-Do List" handleDetail = {handleDetail} />}
+            {todos && <TodoList todos= { todos } tasks="To-Do List"/>}
             { error && <div className ='error'>{ error }</div>}
             { loading && <div className='loader'> </div>}
             {/* {todos && <TodoList todos= { todos } tasks="To-Do List" />} */}

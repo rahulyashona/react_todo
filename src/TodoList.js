@@ -12,17 +12,21 @@ import { Link } from "react-router-dom";
         <div className="todo-list">
             <div className='task-list-head'><h2>{ tasks }</h2></div>
             {todos.map((todo)=> (
+                    <Link to={`/task/${ todo.id }`} className= 'link-detail'>
+
                 <div className="todo-preview" key={todo.id}>
                     <h2>{ todo.task }</h2>
-                    <Link to={`/task/${ todo.id }`}><button className = "detailButton">View Task</button></Link>
-                    <Link to={`/edit/${ todo.id }`}><button className = "detailButton">Edit Task</button></Link>
+                    {/* <Link to={`/task/${ todo.id }`}><button className = "detailButton">View Task</button></Link> */}
                     {/* <h3>{ todo.task }</h3> */}
+                    {todo.isComplete && <div className = 'status-button'><h6>Completed</h6></div>}
+                    {!todo.isComplete && <div className = 'status-button'><h6>Not Complete</h6></div>}
                     <h5>
                         <p>Dew Date: {todo.dewDate} </p>
                         <p>Task of: {todo.author} </p>
                     </h5>
                     {/* <button className = "deleteButton" onClick={()=>handleDelete(todo.id)}>Delete Task</button> */}
                 </div>
+                </Link>
             ))}
         </div>
     );
